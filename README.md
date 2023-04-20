@@ -22,4 +22,4 @@
 
 *Verás que también he creado un servicio, componentes, etc. Para actividades, esto es algo que hicimos ayer como practica para el minimo 1. Esto no debes mirarlo, es una componente como cualquiera de las otras (register, user, location, etc). Solo debes corregir applications que es lo de este minimo.
 
-*Te pregnutarás que porque no he borrado esto de actividades, la respuesta es porque uno de los campos de notificación es la id de la actividad. Teniamos pensado que fuese así y esto te ayudará para crear una actividad y poder comprobar que applications funciona. Te recomiendo que crees la nueva actividad desde thunderclient, porque un parametro de actividades nos dio problemas ayer al crear actividades desde la interfaz gráfica.
+*Te preguntarás que porque no he borrado esto de actividades, la respuesta es porque uno de los campos de notificación es la id de la actividad. Teniamos pensado que fuese así y esto te ayudará para crear una actividad y poder comprobar que applications funciona. Te recomiendo que crees la nueva actividad desde thunderclient, porque un parametro de actividades nos dio problemas ayer al crear actividades desde la interfaz gráfica.
