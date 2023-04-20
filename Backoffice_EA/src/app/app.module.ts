@@ -31,6 +31,14 @@ import { PublicationCreateComponent } from './components/publication-components/
 import { PublicationDetailsComponent } from './components/publication-components/publication-details/publication-details.component';
 import { PublicationEditComponent } from './components/publication-components/publication-edit/publication-edit.component';
 import { CommentResponseComponent } from './components/comment-components/comment-response/comment-response.component';
+import { ActivityComponent } from './components/activity-components/activity/activity.component';
+import { ActivityEditComponent } from './components/activity-components/activity-edit/activity-edit.component';
+import { ActivityCreateComponent } from './components/activity-components/activity-create/activity-create.component';
+import { ActivityDetailsComponent } from './components/activity-components/activity-details/activity-details.component';
+import { ApplicationComponent } from './components/application-components/application/application.component';
+import { ApplicationCreateComponent } from './components/application-components/application-create/application-create.component';
+import { ApplicationDetailsComponent } from './components/application-components/application-details/application-details.component';
+import { ApplicationEditComponent } from './components/application-components/application-edit/application-edit.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -55,10 +63,21 @@ const routes: Routes = [
   { path:'comment-details/responses/:id', component: CommentResponseComponent },
   { path:'user-details/followers/:id',component: UserFollowersComponent },
   { path:'user-details/followed/:id',component: UserFollowedComponent },
+
   { path:'publication',component: PublicationComponent },
   { path:'publication-create',component: PublicationCreateComponent },
   { path:'publication-details/:id',component: PublicationDetailsComponent },
-  { path:'publication-edit/:id',component: PublicationEditComponent }
+  { path:'publication-edit/:id',component: PublicationEditComponent },
+
+  { path:'activity',component: ActivityComponent },
+  { path:'activity-create',component: ActivityCreateComponent },
+  { path:'activity-details/:id',component: ActivityDetailsComponent },
+  { path:'activity-edit/:id',component: ActivityEditComponent },
+
+  { path:'application',component: ApplicationComponent },
+  { path:'application-create',component: ApplicationCreateComponent },
+  { path:'application-details/:id',component: ApplicationDetailsComponent },
+  { path:'application-edit/:id',component: ApplicationEditComponent }
 
 
 
@@ -94,6 +113,14 @@ const routes: Routes = [
     PublicationDetailsComponent,
     PublicationEditComponent,
     CommentResponseComponent,
+    ActivityComponent,
+    ActivityEditComponent,
+    ActivityCreateComponent,
+    ActivityDetailsComponent,
+    ApplicationComponent,
+    ApplicationCreateComponent,
+    ApplicationDetailsComponent,
+    ApplicationEditComponent,
   ],
   imports: [
     BrowserModule,

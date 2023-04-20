@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserService } from 'src/app/services/user.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-user-create',
@@ -40,21 +40,11 @@ export class UserCreateComponent implements OnInit {
 
   onSubmit(): void {
     if (this.userForm.invalid) {
-      return;
+      this.router.navigate(['/listUsers']);
+      alert("Faltan datos");
     }
     this.openModal();
   
-    const userData = this.userForm.value;
-    this.userService.addUser(userData).subscribe(
-      (response) => {
-        console.log('Usuario guardado correctamente:', response);
-        // Aquí podrías redirigir a la página de éxito, por ejemplo
-      },
-      (error) => {
-        console.error('Error al guardar usuario:', error);
-        // Aquí podrías mostrar un mensaje de error al usuario
-      }
-    );
   }
   confirmChanges(): void {
     const userData = this.userForm.value;
